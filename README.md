@@ -1,6 +1,6 @@
-# emgithub
+# EDC0 Gist
 
-https://emgithub.com/
+https://gist.edc0.com
 
 Embed a file from GitHub repository just like [GitHub Gist](https://gist.github.com/).
 
@@ -12,7 +12,7 @@ Demo: <https://yusanshi.com/posts/2019-12-17/emgithub/#%E6%B5%8B%E8%AF%95>.
 
 There are two ways to use the service:
 
-1. Go to https://emgithub.com/ and paste the URL.
+1. Go to https://gist.edc0.com/ and paste the URL.
 2. Open a file in GitHub and simply add "em" before "github.com" in the address bar.
 
 **ProTip**
@@ -37,19 +37,10 @@ You can modify the code and test it by launching an HTTP server in the project d
    
    > Don't be confused by the "404". It is how the "adding em in the address bar" works: after adding the "em", the HTTP server (provided by GitHub Pages) can't find the file so it renders `404.html`. Then in the 404 page, the target file is extracted from the URL.
 
-## Create your own emgithub
-
-You may want to create your own **emgithub** for some reasons, like:
-
-- To fit your personal needs.
-- For security. Say if <https://emgithub.com/> is hacked...
-- For stability. There may be some breaking changes with <https://emgithub.com/> (although I'm trying to avoid this, e.g., when there are major changes, `embed-v2.js`, `embed-v3.js` ... are used. In this way, the former embeddings are not affected).
-
-To do this, you can use either GitHub Pages or your own web server.
 
 ### Use GitHub Pages
 
-If you choose to use GitHub Pages just like <https://emgithub.com/> does, you can fork the project and remove the `CNAME` file. Then go to `Your repository - Settings - GitHub Pages` to setup a custom domain or simply use `username.github.io`.
+If you choose to use GitHub Pages just like <https://gist.edc0.com/> does, you can fork the project and remove the `CNAME` file. Then go to `Your repository - Settings - GitHub Pages` to setup a custom domain or simply use `username.github.io`.
 
 ### Use your own web server
 
@@ -74,6 +65,8 @@ server {
 
 ## Credits
 
+
+- [emgithub](https://emgithub.com)
 - [Highlight.js](https://github.com/highlightjs/highlight.js/) - Javascript syntax highlighter.
 - [highlightjs-line-numbers.js](https://github.com/wcoder/highlightjs-line-numbers.js) - Highlight.js line numbers plugin.
 - [marked](https://github.com/markedjs/marked) - Markdown parser.
